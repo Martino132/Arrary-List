@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package customerdata;
+
+/**
+ *
+ * @author Martino
+ */
+public class CustomerData {
+    String nama;
+    String alamat;
+    String pekerjaan;
+    int tgllahir;
+    int gaji;
+
+void nama(String namaCustomer){
+    nama = namaCustomer;
+    
+}
+void alamat(String alamatCustomer){
+    alamat = alamatCustomer;
+}
+void pekerjaan(String pekerjaanCustomer){
+   pekerjaan = pekerjaanCustomer;
+}
+
+void gaji(int gajiCustomer){
+    gaji = gajiCustomer;
+}
+void tgllahir (int tanggallahir){
+    tgllahir = tanggallahir;
+}
+void infocustomer (){
+    System.out.println("nama customer :" + nama);
+    System.out.println("alamat customer :" + alamat);
+    System.out.println("Pekerjaan Customer :" + pekerjaan);
+    System.out.println("Gaji Customer :" + gaji);
+    System.out.println("Tanggal Lahir :" + tgllahir);
+    
+}
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       CustomerData customer = new CustomerData();
+       customer.nama("Martino");
+       customer.alamat("Jl.Tidar");
+       customer.gaji(1000000);
+       customer.pekerjaan("Komentator Catur");
+       customer.tgllahir(180496);
+       customer.infocustomer();
+               
+        
+    }
+    
+}
